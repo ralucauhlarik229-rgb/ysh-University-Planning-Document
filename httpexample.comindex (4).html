@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>叶仕涵的大学规划书 | 务实进阶·保研考研双保险路线图</title>
+    <style>
+        :root {
+            --bg-body: #090e17;
+            --bg-card: #131d2e;
+            --bg-card-hover: #1a273e;
+            --border-color: #26354a;
+            --text-main: #f1f5f9;
+            --text-sub: #94a3b8;
+            --c-blue: #38bdf8;
+            --c-amber: #fbbf24;
+            --c-green: #34d399;
+            --c-rose: #f87171;
+            --c-purple: #c084fc;
+            --c-gold: #f59e0b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding-bottom: 120px;
+        }
+        a { text-decoration: none; color: inherit; }
+
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        /* 顶部导航 */
+        header {
+            background-color: rgba(19, 29, 46, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+        }
+        .nav-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .brand { display: flex; align-items: center; gap: 10px; }
+        .avatar {
+            width: 38px; height: 38px;
+            background: linear-gradient(135deg, #2563eb, #10b981);
+            border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: bold; font-size: 17px; color: #fff;
+        }
+        .brand-title { font-size: 16px; font-weight: 700; color: #fff; }
+        .brand-sub { font-size: 11.5px; color: var(--text-sub); }
+        .contact-phone {
+            font-size: 12px;
+            color: var(--c-green);
+            background: rgba(52, 211, 153, 0.1);
+            padding: 4px 10px;
+            border-radius: 16px;
+            border: 1px solid rgba(52, 211, 153, 0.25);
+        }
+
+        /* 核心看板 */
+        .hero {
+            margin: 20px auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 20px;
+        }
+        .hero-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+        .hero-title { font-size: 20px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+        .hero-desc { font-size: 13px; color: var(--text-sub); max-width: 720px; }
+        
+        .hero-banner {
+            background: rgba(56, 189, 248, 0.08);
+            border-left: 3px solid var(--c-blue);
+            padding: 8px 12px;
+            border-radius: 0 6px 6px 0;
+            font-size: 12.5px;
+            color: #bae6fd;
+            margin-top: 10px;
+        }
+
+        /* 动态总进度条 */
+        .progress-section {
+            margin-top: 16px;
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 14px 16px;
+        }
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .progress-bar-bg {
+            width: 100%;
+            height: 10px;
+            background: #1e293b;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #38bdf8, #34d399);
+            border-radius: 5px;
+            transition: width 0.3s ease;
+        }
+
+        /* 核心考核指标 */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 16px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border-color);
+        }
+        .metric-card {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--border-color);
+            padding: 10px 12px;
+            border-radius: 8px;
+        }
+        .metric-label { font-size: 11px; color: var(--text-sub); }
+        .metric-val { font-size: 14px; font-weight: 700; color: #fff; margin-top: 2px; }
+
+        /* 时间段规划板块 */
+        .year-section {
+            margin-top: 36px;
+            scroll-margin-top: 70px;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .section-title { font-size: 18px; font-weight: 700; color: #fff; }
+        .section-date { font-size: 12.5px; font-weight: normal; margin-left: 6px; }
+
+        .hr-box {
+            background: rgba(30, 41, 59, 0.45);
+            border-left: 4px solid #3b82f6;
+            padding: 12px 14px;
+            border-radius: 0 8px 8px 0;
+            font-size: 13px;
+            color: #cbd5e1;
+            margin-bottom: 16px;
+        }
+        .hr-box strong { color: #fff; }
+
+        /* 节点卡片网格 */
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 14px;
+        }
+        .timeline-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+        }
+        .card-full { grid-column: 1 / -1; }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .card-time { font-size: 13px; font-weight: 700; }
+        .card-tag {
+            font-size: 11.5px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        /* 交互式打勾清单 */
+        .task-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .task-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 13px;
+            color: #cbd5e1;
+            cursor: pointer;
+            padding: 4px 0;
+            user-select: none;
+        }
+        .task-item:hover { color: #fff; }
+        .custom-checkbox {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #475569;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+            flex-shrink: 0;
+            margin-top: 2px;
+            position: relative;
+            background: rgba(15, 23, 42, 0.6);
+            transition: all 0.2s;
+        }
+        .custom-checkbox:checked {
+            background-color: var(--c-green);
+            border-color: var(--c-green);
+        }
+        .custom-checkbox:checked::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #090e17;
+            font-size: 13px;
+            font-weight: 900;
+        }
+        .task-text { flex: 1; transition: all 0.2s; }
+        .task-item.completed .task-text {
+            text-decoration: line-through;
+            color: #64748b;
+        }
+
+        .badge {
+            font-size: 10.5px;
+            font-weight: 600;
+            padding: 1px 5px;
+            border-radius: 3px;
+            margin-right: 4px;
+            display: inline-block;
+        }
+        .badge-red { background: rgba(239, 68, 68, 0.18); color: #fca5a5; }
+        .badge-blue { background: rgba(56, 189, 248, 0.18); color: #7dd3fc; }
+        .badge-green { background: rgba(52, 211, 153, 0.18); color: #6ee7b7; }
+        .badge-amber { background: rgba(251, 191, 36, 0.18); color: #fde047; }
+        .badge-purple { background: rgba(192, 132, 252, 0.18); color: #d8b4fe; }
+        .badge-gold { background: rgba(245, 158, 11, 0.18); color: #fbbf24; }
+
+        .stage-reminder {
+            margin-top: 12px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px dashed rgba(56, 189, 248, 0.35);
+            font-size: 12px;
+            color: var(--c-blue);
+        }
+
+        /* 底部操作栏 */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            border-top: 1px solid var(--border-color);
+            padding: 12px 16px;
+            backdrop-filter: blur(12px);
+            z-index: 100;
+        }
+        .bottom-wrap {
+            max-width: 1050px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .btn-calendar {
+            background: linear-gradient(135deg, #2563eb, #10b981);
+            color: #fff;
+            font-size: 13.5px;
+            font-weight: 700;
+            padding: 10px 18px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+        }
+        .btn-reset {
+            background: transparent;
+            color: #94a3b8;
+            border: 1px solid var(--border-color);
+            font-size: 12px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .toast {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #10b981;
+            color: #090e17;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            z-index: 200;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="toast" class="toast">✅ 进度已自动同步保存</div>
+
+    <header>
+        <div class="container nav-wrap">
+            <div class="brand">
+                <div class="avatar">叶</div>
+                <div>
+                    <div class="brand-title">叶仕涵的大学四年学术进阶规划书</div>
+                    <div class="brand-sub">福建农林大学 · 金融学 | 保研推免 & 统考攻坚路线图</div>
+                </div>
+            </div>
+            <div class="contact-phone">
+                📞 15388189899
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section class="hero">
+            <div class="hero-top">
+                <div>
+                    <h1 class="hero-title">务实进阶·保研考研双保险行动清单</h1>
+                    <p class="hero-desc">践行“跳一跳能够得着”原则：死磕核心数理GPA，外语主攻六级高分，科研认准1篇扎实Working Paper，主攻优势中坚985/顶尖财经推免 + 顶级名校统考兜底。</p>
+                    <div class="hero-banner">
+                        🎯 <strong>核心战略：</strong>保研主攻厦大/上财/华东师大等中坚985与顶尖财经；统考提前攻坚431与数三，以400+初试断层高分硬刚顶级名校！
+                    </div>
+                </div>
+            </div>
+
+            <!-- 进度条 -->
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span>🎯 四年总任务推进进度</span>
+                    <span id="progress-text" style="color: var(--c-green);">0 / 28 项 (0%)</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div id="progress-bar" class="progress-bar-fill"></div>
+                </div>
+            </div>
+
+            <!-- 核心画像指标 -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-label">📊 核心绩点目标</div>
+                    <div class="metric-val" style="color: var(--c-blue);">GPA 89-92+ (前2名)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">🚩 政治与职务</div>
+                    <div class="metric-val" style="color: var(--c-rose);">班长/学委 + 党员</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">🌐 性价比外语</div>
+                    <div class="metric-val" style="color: var(--c-green);">六级 580~600+</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">📝 科研成果落地</div>
+                    <div class="metric-val" style="color: var(--c-purple);">省级大创 + Working Paper</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">📐 聚焦学术竞赛</div>
+                    <div class="metric-val" style="color: var(--c-amber);">统计建模 / 正大杯省奖</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 大一 -->
+        <section id="y1" class="year-section">
+            <div class="section-header">
+                <h2 class="section-title">🔰 大一：数理破局、第一排名奠基与学风带头（2026.09 – 2027.08）</h2>
+            </div>
+            
+            <div class="hr-box" style="border-left-color: var(--c-blue);">
+                <strong>务实导师解读：</strong> 大一最关键的就是<strong>别让高数、微观拖后腿</strong>。竞选班长或学委锁定推免综测第一顺位；外语全力拿下四级高分，为大二冲六级600+铺路。
+            </div>
+
+            <div class="timeline-grid">
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-blue);">2026.09 - 2026.10</span>
+                        <span class="card-tag">【学业抢跑与竞选班委】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t1-1">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">学业</span>微积分/高等数学、微观经济学狠抓课后大题，目标期末单科 90+，奠定专业前 1~2 名基础</span>
+                        </li>
+                        <li class="task-item" data-id="t1-2">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-gold">职务</span>全力竞选<strong>班长或学习委员</strong>（担任学术骨干，与辅导员及骨干专业课老师建立良好沟通）</span>
+                        </li>
+                        <li class="task-item" data-id="t1-3">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-red">政治</span>开学第一周递交<strong>入党申请书</strong>（班委身份确保支部推优的高优先级）</span>
+                        </li>
+                        <li class="task-item" data-id="t1-4">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-amber">外语</span>报名12月全国大学英语四级（CET-4）</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-blue);">2026.11 - 2026.12</span>
+                        <span class="card-tag">【四级高分与工具入门】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t1-5">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">外语</span>参加CET-4考试（争取考出 580~600+ 高分）</span>
+                        </li>
+                        <li class="task-item" data-id="t1-6">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-purple">工具</span>学习 Stata 或 Python 基础语法与金融数据清洗，掌握知网（CNKI）文献检索与下载</span>
+                        </li>
+                        <li class="task-item" data-id="t1-7">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-red">政治</span>按期规范完成第1季度思想汇报</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-blue);">2027.01 - 2027.02（寒假）</span>
+                        <span class="card-tag">【六级词汇与文献扫盲】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t1-8">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">外语</span>背诵 CET-6 核心高频词汇，精听六级历年真题听力</span>
+                        </li>
+                        <li class="task-item" data-id="t1-9">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-purple">学术</span>精读 3~5 篇国内优秀期刊（如《财贸经济》《金融论坛》）实证范文，了解论文标准框架</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-blue);">2027.03 - 2027.05</span>
+                        <span class="card-tag">【拜访导师与积极分子推优】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t1-10">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-purple">学术</span>主动联系 1 位带课题的学院青年骨干教师，申请协助整理数据、查找文献（搭建科研师承）</span>
+                        </li>
+                        <li class="task-item" data-id="t1-11">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-amber">竞赛</span>以队员身份组队尝试报名<strong>全国大学生统计建模大赛</strong>或“正大杯”市调赛，熟悉流程</span>
+                        </li>
+                        <li class="task-item" data-id="t1-12">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-red">政治</span>顺利列为<strong>入党积极分子</strong>并参加党课培训；完成第2季度思想汇报</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card card-full">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-blue);">2027.06 - 2027.08（大一暑假）</span>
+                        <span class="card-tag">【绩点定盘与六级突破】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t1-13">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">学业</span>大一期末综合绩点锁定在<strong>专业前 2 名（GPA 89+）</strong>；参加6月CET-6考试（力争550~580+）</span>
+                        </li>
+                        <li class="task-item" data-id="t1-14">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-purple">科研</span>在导师指导下确定 1 个具体的研究小课题，跑通简单回归模型；完成第3季度思想汇报</span>
+                        </li>
+                    </ul>
+                    <div class="stage-reminder">
+                        <span>⏰ <strong>大一结束提醒：</strong> 查看成绩单与六级分数，在上方逐一打勾确认大一进度！</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 大二 -->
+        <section id="y2" class="year-section">
+            <div class="section-header">
+                <h2 class="section-title">⚔️ 大二：大创立项、主攻统计建模与中级计量攻坚（2027.09 – 2028.08）</h2>
+            </div>
+            
+            <div class="hr-box" style="border-left-color: var(--c-amber);">
+                <strong>务实导师解读：</strong> 大二是科研竞赛成果产出的黄金期。不广撒网，集中攻下 1 个省级/国家级大创立项，打出统计建模或正大杯省奖，足以在夏令营和复试脱颖而出。
+            </div>
+
+            <div class="timeline-grid">
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-amber);">2027.09 - 2027.10</span>
+                        <span class="card-tag">【大创立项与六级刷分】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t2-1">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-purple">科研</span>依托闽台金融/普惠金融方向，作为负责人申报<strong>大学生创新创业训练计划（省级/国家级学术大创）</strong></span>
+                        </li>
+                        <li class="task-item" data-id="t2-2">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">外语</span>若大一六级未超580分，报名12月六级刷分（目标580~600+）</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-amber);">2027.11 - 2027.12</span>
+                        <span class="card-tag">【中级计量攻坚与实证建模】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t2-3">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">硬课</span>认真学好《计量经济学》，熟练掌握双重差分法（DID）与固定效应模型 Stata 常用代码</span>
+                        </li>
+                        <li class="task-item" data-id="t2-4">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-purple">论文</span>开始撰写大创课题实证分析初稿；按期完成第4季度思想汇报</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-amber);">2028.01 - 2028.02（寒假）</span>
+                        <span class="card-tag">【论文打磨与目标院校调研】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t2-5">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-purple">科研</span>完成大创论文初稿全文（加入稳健性检验与机制分析，形成完整 Working Paper 雏形）</span>
+                        </li>
+                        <li class="task-item" data-id="t2-6">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">调研</span>客观调研厦门大学、华东师大、上财等高校往年夏令营入营要求与统考报录比</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-amber);">2028.03 - 2028.05</span>
+                        <span class="card-tag">【竞赛冲奖与发展对象确定】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t2-7">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-amber">竞赛</span>全力主攻<strong>全国大学生统计建模大赛</strong>或“正大杯”市调赛答辩，力争斩获省一/省二等奖</span>
+                        </li>
+                        <li class="task-item" data-id="t2-8">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-red">政治</span>积极分子考察满1年，经综合考核确定为<strong>发展对象</strong>，参加集中培训；完成第5季度思想汇报</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card card-full">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-amber);">2028.06 - 2028.08（大二暑假）</span>
+                        <span class="card-tag">【推免名额锁定与统考专业课启动】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t2-9">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">学业</span>确保前两学年总GPA稳居<strong>专业前 2 名</strong>（牢牢锁定校内推免第一批指标）</span>
+                        </li>
+                        <li class="task-item" data-id="t2-10">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-amber">统考抢跑</span>购买目标院校金融专硕统考教材（431金融学综合、396经济类联考），暑假通读一遍核心参考书</span>
+                        </li>
+                        <li class="task-item" data-id="t2-11">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-red">政治</span>按期完成第6季度思想汇报</span>
+                        </li>
+                    </ul>
+                    <div class="stage-reminder">
+                        <span>⏰ <strong>大二结束提醒：</strong> 大创与竞赛基本尘埃落定，请回网页勾选大二任务！</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 大三 -->
+        <section id="y3" class="year-section">
+            <div class="section-header">
+                <h2 class="section-title">🚀 大三：夏令营出击、双轨复习与决胜推免/统考（2028.09 – 2029.08）</h2>
+            </div>
+            
+            <div class="hr-box" style="border-left-color: var(--c-green);">
+                <strong>务实导师解读：</strong> 大三是变现之年。用“专业前2 + 省级大创/论文 + 统计建模省奖 + 六级600+”投递夏令营；同时全力推进统考复习，实现真正意义上的“进可攻名校夏令营，退可守统考高分”。
+            </div>
+
+            <div class="timeline-grid">
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-green);">2028.09 - 2028.11</span>
+                        <span class="card-tag">【预备党员与夏令营材料库】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t3-1">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-red">政治</span>经支部大会讨论表决，正式接收为<strong>中共预备党员</strong></span>
+                        </li>
+                        <li class="task-item" data-id="t3-2">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">材料</span>制作学术简历、个人陈述，将大创论文装订成规范的<strong>代表作（Working Paper）</strong></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-green);">2028.12 - 2029.02（寒假）</span>
+                        <span class="card-tag">【431框架建立与面试答辩准备】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t3-3">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-amber">统考第一轮</span>431金融学综合（货币银行学、公司理财、投资学）梳理出知识框架思维导图</span>
+                        </li>
+                        <li class="task-item" data-id="t3-4">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-purple">面试</span>针对自己的大创论文，准备中英文自我介绍及论文实证答辩要点；完成第7、8季度思想汇报</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-green);">2029.03 - 2029.05</span>
+                        <span class="card-tag">【夏令营精准网申投递】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t3-5">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-green">网申</span>精准投递<strong>厦门大学、华东师范大学、上海财经大学、中南财经政法、西南财经</strong>等金融夏令营</span>
+                        </li>
+                        <li class="task-item" data-id="t3-6">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-purple">推荐信</span>联系科研导师与骨干教授，出具2份真诚、详实的专家推荐信；完成思想汇报</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card card-full">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-green);">2029.06 - 2029.08（大三暑假）</span>
+                        <span class="card-tag">【夏令营夺优与统考全真强化】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t3-7">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-green">夏令营</span>参加夏令营面试与笔试，力争斩获<strong>“优秀营员（优营）”</strong>锁定拟录取名额</span>
+                        </li>
+                        <li class="task-item" data-id="t3-8">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-amber">统考闭环</span>同步高强度推进统考复习（396/数三刷真题、431背诵第二轮），做好万全准备</span>
+                        </li>
+                        <li class="task-item" data-id="t3-9">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-red">政治</span>按期完成第9季度思想汇报</span>
+                        </li>
+                    </ul>
+                    <div class="stage-reminder">
+                        <span>⏰ <strong>大三决战提醒：</strong> 夏令营出结果或完成统考二轮复习后，立即回网页打勾标记！</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 大四 -->
+        <section id="y4" class="year-section">
+            <div class="section-header">
+                <h2 class="section-title">🏆 大四：推免接收确认 / 统考高分收官与从容毕业（2029.09 – 2030.06）</h2>
+            </div>
+            
+            <div class="hr-box" style="border-left-color: var(--c-rose);">
+                <strong>务实导师解读：</strong> 最终收获期。9月推免系统一锤定音；若统考，凭前面扎实的数理与专业课积累，在12月考出高分，实现名校研究生的华丽跃升。
+            </div>
+
+            <div class="timeline-grid">
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-rose);">2029.09 - 2029.11</span>
+                        <span class="card-tag">【推免录取确认 / 统考冲刺】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t4-1">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-green">推免确认</span>9月下旬在国家推免系统中确认高水平大学金融硕士录取通知，正式上岸！</span>
+                        </li>
+                        <li class="task-item" data-id="t4-2">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-amber">统考冲刺</span>若走统考，10月完成报名，11月全真模考主攻专业课大题与数学压轴题</span>
+                        </li>
+                        <li class="task-item" data-id="t4-3">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-red">政治</span>预备期满1年，支部大会通过按期转为<strong>中共正式党员</strong></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-rose);">2029.12 - 2030.01</span>
+                        <span class="card-tag">【统考实战与毕业论文开题】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t4-4">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-amber">统考实战</span>12月下旬从容参加全国硕士研究生统考，以高分过线（若参加）</span>
+                        </li>
+                        <li class="task-item" data-id="t4-5">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">论文</span>确定本科毕业论文导师，依托大创课题进行深度拓展与开题</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-rose);">2030.02 - 2030.04</span>
+                        <span class="card-tag">【复试高分与论文撰写】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t4-6">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-green">复试录取</span>凭班委履历、大创论文与扎实专业功底在统考复试中稳定发挥拿下录取（若统考）</span>
+                        </li>
+                        <li class="task-item" data-id="t4-7">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">论文</span>完成毕业论文盲审与修改，争评校级优秀毕业论文</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="card-header">
+                        <span class="card-time" style="color: var(--c-rose);">2030.05 - 2030.06</span>
+                        <span class="card-tag">【答辩通过与名校研途启航】</span>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item" data-id="t4-8">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-blue">答辩</span>顺利完成本科毕业答辩，办理党组织关系与学籍档案转接</span>
+                        </li>
+                        <li class="task-item" data-id="t4-9">
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="task-text"><span class="badge badge-green">启航</span>手握名校金融硕士录取通知书，以扎实、自信、从容的姿态正式步入研究生殿堂！</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- 底部操作悬浮栏 -->
+    <div class="bottom-bar">
+        <div class="bottom-wrap">
+            <button class="btn-calendar" onclick="exportAppleCalendar()">
+                📅 一键导入苹果日历 (iPhone / iPad)
+            </button>
+            <div style="display: flex; gap: 8px;">
+                <button class="btn-reset" onclick="resetProgress()">重置打勾</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const STORAGE_KEY = 'ye_shihan_college_plan_progress_v2';
+
+        function getSafe(key) {
+            try { return localStorage.getItem(key); } catch(e) { return null; }
+        }
+        function setSafe(key, val) {
+            try { localStorage.setItem(key, val); } catch(e) {}
+        }
+        function removeSafe(key) {
+            try { localStorage.removeItem(key); } catch(e) {}
+        }
+
+        function loadProgress() {
+            try {
+                const saved = getSafe(STORAGE_KEY);
+                const completedIds = saved ? JSON.parse(saved) : [];
+                
+                document.querySelectorAll('.task-item').forEach(item => {
+                    const id = item.getAttribute('data-id');
+                    const checkbox = item.querySelector('.custom-checkbox');
+                    if (completedIds.includes(id)) {
+                        checkbox.checked = true;
+                        item.classList.add('completed');
+                    } else {
+                        checkbox.checked = false;
+                        item.classList.remove('completed');
+                    }
+                });
+                updateProgressBar();
+            } catch(e) {
+                console.error("加载进度异常:", e);
+            }
+        }
+
+        function saveProgress() {
+            try {
+                const completedIds = [];
+                document.querySelectorAll('.task-item').forEach(item => {
+                    const id = item.getAttribute('data-id');
+                    const checkbox = item.querySelector('.custom-checkbox');
+                    if (checkbox.checked) {
+                        completedIds.push(id);
+                        item.classList.add('completed');
+                    } else {
+                        item.classList.remove('completed');
+                    }
+                });
+                setSafe(STORAGE_KEY, JSON.stringify(completedIds));
+                updateProgressBar();
+                showToast();
+            } catch(e) {
+                console.error("保存进度异常:", e);
+            }
+        }
+
+        function updateProgressBar() {
+            try {
+                const total = document.querySelectorAll('.task-item').length;
+                const completed = document.querySelectorAll('.task-item.completed').length;
+                const percent = total === 0 ? 0 : Math.round((completed / total) * 100);
+                
+                const pBar = document.getElementById('progress-bar');
+                const pText = document.getElementById('progress-text');
+                if (pBar) pBar.style.width = percent + '%';
+                if (pText) pText.innerText = `${completed} / ${total} 项 (${percent}%)`;
+            } catch(e) {}
+        }
+
+        function showToast() {
+            const toast = document.getElementById('toast');
+            if (toast) {
+                toast.style.display = 'block';
+                setTimeout(() => { toast.style.display = 'none'; }, 1500);
+            }
+        }
+
+        function resetProgress() {
+            if (confirm('确定要重置所有已打勾的任务进度吗？')) {
+                removeSafe(STORAGE_KEY);
+                loadProgress();
+            }
+        }
+
+        document.querySelectorAll('.task-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const checkbox = item.querySelector('.custom-checkbox');
+                if (e.target !== checkbox) {
+                    checkbox.checked = !checkbox.checked;
+                }
+                saveProgress();
+            });
+        });
+
+        // 苹果日历导出算法 (务实进阶版)
+        function exportAppleCalendar() {
+            const events = [
+                {
+                    title: "【大一·起步】数理抢跑与竞选班委",
+                    start: "20260901", end: "20261101",
+                    desc: "1. 高数/微积分课后大题单科90+\\n2. 竞选班长或学习委员\\n3. 递交入党申请书\\n4. 报名CET-4\\n\\n📌 阶段末尾提醒：请记得打开规划网页打勾确认完成情况！"
+                },
+                {
+                    title: "【大一·突破】四级高分与工具入门",
+                    start: "20261101", end: "20270101",
+                    desc: "1. CET-4考试(冲击580~600+)\\n2. Stata/Python与知网文献检索\\n3. 第1季度思想汇报\\n\\n📌 阶段末尾提醒：请记得打开规划网页打勾！"
+                },
+                {
+                    title: "【大一·寒假】六级词汇与文献扫盲",
+                    start: "20270101", end: "20270301",
+                    desc: "1. 背诵六级核心词汇与精听听力\\n2. 精读3~5篇国内优秀期刊实证范文\\n\\n📌 阶段末尾提醒：请打开网页打勾！"
+                },
+                {
+                    title: "【大一·进阶】拜访导师与积极分子推优",
+                    start: "20270301", end: "20270601",
+                    desc: "1. 拜访骨干老师协助整理数据(科研师承)\\n2. 报名统计建模大赛或正大杯熟悉流程\\n3. 列为入党积极分子&思想汇报\\n\\n📌 请打开网页打勾！"
+                },
+                {
+                    title: "【大一·暑假】绩点定盘与六级突破",
+                    start: "20270601", end: "20270901",
+                    desc: "1. 锁定大一GPA在专业前2名(89+)\\n2. CET-6考出550~580+\\n3. 确定研究小课题跑通简单回归\\n4. 第3季度思想汇报\\n\\n📌 大一结束：请在网页上完整勾选大一成就！"
+                },
+                {
+                    title: "【大二·立项】大创立项与六级刷分",
+                    start: "20270901", end: "20271101",
+                    desc: "1. 作为负责人申报省级/国家级学术大创\\n2. 报名12月六级刷分(冲580~600+)\\n\\n📌 阶段末尾提醒：请打开规划网页打勾！"
+                },
+                {
+                    title: "【大二·计量】中级计量攻坚与实证建模",
+                    start: "20271101", end: "20280101",
+                    desc: "1. 熟练掌握DID与面板固定效应Stata代码\\n2. 撰写大创课题实证分析初稿\\n3. 第4季度思想汇报\\n\\n📌 阶段末尾提醒：请打开网页打勾！"
+                },
+                {
+                    title: "【大二·寒假】论文打磨与目标院校调研",
+                    start: "20280101", end: "20280301",
+                    desc: "1. 完成大创论文初稿全文(Working Paper雏形)\\n2. 客观调研厦大/华东师大/上财等夏令营与报录比\\n\\n📌 请打开网页打勾！"
+                },
+                {
+                    title: "【大二·成果】竞赛冲奖与发展对象确定",
+                    start: "20280301", end: "20280601",
+                    desc: "1. 统计建模或正大杯答辩力争省奖\\n2. 确定为发展对象并参加培训\\n3. 第5季度思想汇报\\n\\n📌 请打开网页打勾！"
+                },
+                {
+                    title: "【大二·暑假】推免名额锁定与统考专业课启动",
+                    start: "20280601", end: "20280901",
+                    desc: "1. 确保前两年总GPA稳居专业前2名(锁定推免名额)\\n2. 通读431与396第一遍教材\\n3. 第6季度思想汇报\\n\\n📌 大二结束：请在网页上完整勾选大二成就！"
+                },
+                {
+                    title: "【大三·决战】预备党员与夏令营材料库",
+                    start: "20280901", end: "20281201",
+                    desc: "1. 接收为中共预备党员\\n2. 制作简历并将大创论文装订成规范Working Paper\\n\\n📌 阶段末尾提醒：请打开网页打勾！"
+                },
+                {
+                    title: "【大三·框架】431框架建立与面试答辩准备",
+                    start: "20281201", end: "20290301",
+                    desc: "1. 431金融学综合梳理思维导图\\n2. 准备大创论文中英文答辩要点\\n3. 第7/8季度思想汇报\\n\\n📌 请打开网页打勾！"
+                },
+                {
+                    title: "【大三·网申】夏令营精准网申投递",
+                    start: "20290301", end: "20290601",
+                    desc: "1. 精准投递厦大/华东师大/上财/中南财/西南财夏令营\\n2. 邀请老师出具2份详实专家推荐信\\n\\n📌 请打开网页打勾！"
+                },
+                {
+                    title: "【大三·决胜】夏令营夺优与统考全真强化",
+                    start: "20290601", end: "20290901",
+                    desc: "1. 参加夏令营面试笔试斩获“优秀营员”\\n2. 统考封闭推进(396真题+431背诵第二轮)\\n3. 第9季度思想汇报\\n\\n📌 关键节点：请在网页上勾选优营成果！"
+                },
+                {
+                    title: "【大四·收割】推免录取确认 / 统考冲刺",
+                    start: "20290901", end: "20291201",
+                    desc: "1. 国家推免系统确认高水平大学录取通知书\\n2. 若统考进行最后全真模考\\n3. 按期转为中共正式党员\\n\\n📌 最终倒计时：请打开网页打勾！"
+                },
+                {
+                    title: "【大四·启航】答辩通过与名校研途启航",
+                    start: "20291201", end: "20300701",
+                    desc: "1. 本科毕业论文从容答辩争评优秀\\n2. 办理党组织关系及档案转接\\n3. 正式步入名校研究生殿堂！\\n\\n🏆 恭喜！务实进阶四年行动圆满完成！"
+                }
+            ];
+
+            let icsContent = "BEGIN:VCALENDAR\n" +
+                "VERSION:2.0\n" +
+                "PRODID:-//Ye Shihan//Postgraduate Realistic Plan//CN\n" +
+                "CALSCALE:GREGORIAN\n" +
+                "METHOD:PUBLISH\n" +
+                "X-WR-CALNAME:叶仕涵保研考研日程表\n" +
+                "X-WR-TIMEZONE:Asia/Shanghai\n";
+
+            events.forEach((ev, idx) => {
+                icsContent += "BEGIN:VEVENT\n" +
+                    `UID:plan-realistic-${idx}@yeshihan.plan\n` +
+                    `DTSTAMP:20260901T000000Z\n` +
+                    `DTSTART;VALUE=DATE:${ev.start}\n` +
+                    `DTEND;VALUE=DATE:${ev.end}\n` +
+                    `SUMMARY:${ev.title}\n` +
+                    `DESCRIPTION:${ev.desc}\n` +
+                    "BEGIN:VALARM\n" +
+                    "TRIGGER:-P3D\n" +
+                    "ACTION:DISPLAY\n" +
+                    "DESCRIPTION:⏰ 本阶段任务即将截止，请打开规划网页打勾确认进度！\n" +
+                    "END:VALARM\n" +
+                    "END:VEVENT\n";
+            });
+
+            icsContent += "END:VCALENDAR";
+
+            const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.setAttribute('download', '叶仕涵保研考研务实四年日程表.ics');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadProgress);
+        } else {
+            loadProgress();
+        }
+    </script>
+</body>
+</html>
